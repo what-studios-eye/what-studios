@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Studio Name | Independent Production Studio</title>
+    <title>What? Studios | We make weird films. And shows.</title>
     <style>
         * {
             margin: 0;
@@ -15,7 +15,7 @@
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             color: #fff;
-            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2a2a2a 100%);
             overflow-x: hidden;
         }
 
@@ -30,7 +30,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(15, 15, 35, 0.9);
+            background: rgba(10, 10, 10, 0.9);
             backdrop-filter: blur(10px);
             z-index: 1000;
             transition: all 0.3s ease;
@@ -46,11 +46,13 @@
         .logo {
             font-size: 1.8rem;
             font-weight: bold;
-            background: linear-gradient(45deg, #ff6b6b, #ffd93d, #6bcf7f);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: glow 2s ease-in-out infinite alternate;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
         }
 
         @keyframes glow {
@@ -72,7 +74,7 @@
         }
 
         .nav-links a:hover {
-            color: #ffd93d;
+            color: #cccccc;
             transform: translateY(-2px);
         }
 
@@ -83,7 +85,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: #ffd93d;
+            background: #cccccc;
             transition: width 0.3s ease;
         }
 
@@ -124,7 +126,7 @@
         .hero h1 {
             font-size: clamp(2.5rem, 5vw, 4rem);
             margin-bottom: 1rem;
-            background: linear-gradient(45deg, #fff, #ffd93d, #ff6b6b);
+            background: linear-gradient(45deg, #ffffff, #cccccc, #999999);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -151,14 +153,14 @@
         .cta-button {
             display: inline-block;
             padding: 15px 30px;
-            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+            background: linear-gradient(45deg, #ffffff, #cccccc);
             color: #000;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
             transition: all 0.3s ease;
             animation: slideInUp 1s ease-out 0.6s both;
-            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
         }
 
         @keyframes slideInUp {
@@ -168,7 +170,7 @@
 
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.4);
+            box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
         }
 
         /* Sections */
@@ -181,7 +183,7 @@
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 3rem;
-            background: linear-gradient(45deg, #fff, #ffd93d);
+            background: linear-gradient(45deg, #ffffff, #cccccc);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -214,7 +216,7 @@
         .service-icon {
             font-size: 3rem;
             margin-bottom: 1rem;
-            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+            background: linear-gradient(45deg, #ffffff, #cccccc);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -233,7 +235,7 @@
             height: 250px;
             border-radius: 15px;
             overflow: hidden;
-            background: linear-gradient(45deg, #ff6b6b, #ffd93d, #6bcf7f);
+            background: linear-gradient(45deg, #333333, #666666, #999999);
             cursor: pointer;
             transition: all 0.3s ease;
         }
@@ -276,7 +278,7 @@
         .form-group label {
             display: block;
             margin-bottom: 0.5rem;
-            color: #ffd93d;
+            color: #cccccc;
         }
 
         .form-group input,
@@ -294,7 +296,7 @@
         .form-group textarea:focus {
             outline: none;
             background: rgba(255, 255, 255, 0.2);
-            box-shadow: 0 0 20px rgba(255, 211, 61, 0.3);
+            box-shadow: 0 0 20px rgba(204, 204, 204, 0.3);
         }
 
         .form-group input::placeholder,
@@ -304,7 +306,7 @@
 
         /* Footer */
         footer {
-            background: rgba(15, 15, 35, 0.9);
+            background: rgba(10, 10, 10, 0.9);
             text-align: center;
             padding: 2rem 0;
         }
@@ -320,7 +322,7 @@
             display: inline-block;
             width: 50px;
             height: 50px;
-            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+            background: linear-gradient(45deg, #ffffff, #cccccc);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -332,7 +334,7 @@
 
         .social-links a:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(255, 107, 107, 0.4);
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
         }
 
         /* Mobile Menu */
@@ -385,7 +387,9 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo">STUDIO NAME</div>
+            <div class="logo">
+                <img src="#what-studios-logo.png" alt="What? Studios" style="height: 40px; width: auto;">
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
@@ -404,31 +408,31 @@
         <section id="home" class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1>Creative Vision Meets Professional Excellence</h1>
-                    <p>We're an independent production studio crafting compelling stories, stunning visuals, and unforgettable experiences that resonate with audiences worldwide.</p>
-                    <a href="#contact" class="cta-button">Start Your Project</a>
+                    <h1>We make weird films. And shows.</h1>
+                    <p>What? Studios is an independent production house creating unconventional content that challenges expectations and explores the strange, surreal, and wonderfully weird corners of storytelling.</p>
+                    <a href="#portfolio" class="cta-button">View Our Work</a>
                 </div>
             </div>
         </section>
 
         <section id="services">
             <div class="container">
-                <h2 class="section-title fade-in">Our Services</h2>
+                <h2 class="section-title fade-in">What We Create</h2>
                 <div class="services-grid">
                     <div class="service-card fade-in">
                         <div class="service-icon">🎬</div>
-                        <h3>Video Production</h3>
-                        <p>From concept to final cut, we create compelling video content that tells your story with cinematic quality and creative flair.</p>
+                        <h3>Weird Films</h3>
+                        <p>Short films, documentaries, and experimental cinema that push boundaries and explore unconventional narratives with dark humor and surreal storytelling.</p>
                     </div>
                     <div class="service-card fade-in">
-                        <div class="service-icon">🎵</div>
-                        <h3>Audio Production</h3>
-                        <p>Professional sound design, music composition, and audio post-production to enhance every aspect of your project.</p>
+                        <div class="service-icon">📺</div>
+                        <h3>Strange Shows</h3>
+                        <p>Web series, sketches, and episodic content that embrace the bizarre, the unexpected, and the delightfully uncomfortable moments of human experience.</p>
                     </div>
                     <div class="service-card fade-in">
                         <div class="service-icon">✨</div>
-                        <h3>Creative Direction</h3>
-                        <p>Strategic creative guidance to ensure your project achieves maximum impact and connects with your target audience.</p>
+                        <h3>Creative Experiments</h3>
+                        <p>Genre-bending projects that blur the lines between reality and fiction, exploring new formats and unconventional approaches to visual storytelling.</p>
                     </div>
                 </div>
             </div>
@@ -440,26 +444,26 @@
                 <div class="portfolio-grid">
                     <div class="portfolio-item fade-in">
                         <div class="portfolio-content">
-                            <h3>Project Alpha</h3>
-                            <p>Award-winning short film that premiered at Sundance</p>
+                            <h3>The Waiting Room</h3>
+                            <p>Surreal short film about existential dread in mundane spaces</p>
                         </div>
                     </div>
                     <div class="portfolio-item fade-in">
                         <div class="portfolio-content">
-                            <h3>Brand Campaign</h3>
-                            <p>Multi-platform campaign reaching 2M+ viewers</p>
+                            <h3>Midnight Grocery</h3>
+                            <p>Dark comedy series set in a 24-hour convenience store</p>
                         </div>
                     </div>
                     <div class="portfolio-item fade-in">
                         <div class="portfolio-content">
-                            <h3>Music Video</h3>
-                            <p>Viral music video with 5M+ streams</p>
+                            <h3>Dreams of Electric Sheep</h3>
+                            <p>Experimental documentary on AI consciousness</p>
                         </div>
                     </div>
                     <div class="portfolio-item fade-in">
                         <div class="portfolio-content">
-                            <h3>Documentary</h3>
-                            <p>Feature documentary selected for film festivals</p>
+                            <h3>The Uncomfortable Truth</h3>
+                            <p>Sketch series exploring social awkwardness and human connection</p>
                         </div>
                     </div>
                 </div>
@@ -468,7 +472,7 @@
 
         <section id="contact">
             <div class="container">
-                <h2 class="section-title fade-in">Let's Create Something Amazing</h2>
+                <h2 class="section-title fade-in">Get In Touch</h2>
                 <form class="contact-form fade-in">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -479,12 +483,12 @@
                         <input type="email" id="email" name="email" placeholder="your@email.com" required>
                     </div>
                     <div class="form-group">
-                        <label for="project">Project Type</label>
-                        <input type="text" id="project" name="project" placeholder="Video, Audio, Creative Direction, etc.">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Collaboration, screening, or just saying hi">
                     </div>
                     <div class="form-group">
-                        <label for="message">Tell us about your project</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Describe your vision, goals, and any specific requirements..." required></textarea>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us what's on your mind..." required></textarea>
                     </div>
                     <button type="submit" class="cta-button">Send Message</button>
                 </form>
@@ -500,11 +504,31 @@
                 <a href="#">🎬</a>
                 <a href="#">💼</a>
             </div>
-            <p>&copy; 2025 Your Studio Name. All rights reserved.</p>
+            <p>&copy; 2025 What? Studios. Making weird films and shows.</p>
         </div>
     </footer>
 
     <script>
+        // Load the actual logo file
+        async function loadLogo() {
+            try {
+                const logoData = await window.fs.readFile('#what-studios-logo.png');
+                const logoBlob = new Blob([logoData], { type: 'image/png' });
+                const logoUrl = URL.createObjectURL(logoBlob);
+                const logoImg = document.querySelector('.logo img');
+                if (logoImg) {
+                    logoImg.src = logoUrl;
+                    logoImg.style.filter = 'brightness(0) invert(1)'; // Make it white for dark background
+                }
+            } catch (error) {
+                console.log('Logo file not found, using fallback');
+                // Keep the fallback img src as is for GitHub
+            }
+        }
+
+        // Load logo when page loads
+        window.addEventListener('load', loadLogo);
+
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -541,9 +565,9 @@
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
-                header.style.background = 'rgba(15, 15, 35, 0.95)';
+                header.style.background = 'rgba(10, 10, 10, 0.95)';
             } else {
-                header.style.background = 'rgba(15, 15, 35, 0.9)';
+                header.style.background = 'rgba(10, 10, 10, 0.9)';
             }
         });
 
@@ -557,7 +581,7 @@
             
             // Here you would typically send the data to your server
             // For now, we'll just show an alert
-            alert('Thank you for your message! We\'ll get back to you soon.');
+            alert('Thanks for reaching out! We\'ll get back to you soon.');
             
             // Reset form
             this.reset();
