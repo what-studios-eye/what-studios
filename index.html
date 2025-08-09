@@ -271,7 +271,7 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* Portfolio Grid */
+        /* Portfolio Grid - Updated for Images */
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -284,14 +284,51 @@
             height: 250px;
             border-radius: 15px;
             overflow: hidden;
-            background: linear-gradient(45deg, #333333, #666666, #999999);
             cursor: pointer;
             transition: all 0.3s ease;
+            /* Background images for each project */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Individual project backgrounds */
+        .portfolio-item:nth-child(1) {
+            background-image: url('TDW_KickStarter.png');
+        }
+
+        .portfolio-item:nth-child(2) {
+            background-image: url('AD_thumbnail.png');
+        }
+
+        .portfolio-item:nth-child(3) {
+            background-image: url('LAST_DAY_THUMB.jpg');
+        }
+
+        .portfolio-item:nth-child(4) {
+            background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop');
+        }
+
+        /* Dark overlay for better text readability */
+        .portfolio-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            z-index: 1;
         }
 
         .portfolio-item:hover {
             transform: scale(1.05);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .portfolio-item:hover::before {
+            background: rgba(0, 0, 0, 0.6);
         }
 
         .portfolio-content {
@@ -303,6 +340,7 @@
             padding: 1.5rem;
             transform: translateY(100%);
             transition: transform 0.3s ease;
+            z-index: 2;
         }
 
         .portfolio-item:hover .portfolio-content {
@@ -507,6 +545,8 @@
                     <div class="portfolio-item fade-in">
                         <div class="portfolio-content">
                             <h3>Last Day</h3>
+                            <div class="portfolio-content">
+                            <h3>Last Day</h3>
                             <p>Upcoming coming-of-age, dramedy feature about what it means to truly live life to the fullest.</p>
                         </div>
                     </div>
@@ -647,7 +687,7 @@
         document.querySelectorAll('.portfolio-item').forEach(item => {
             item.addEventListener('click', function() {
                 // Add click handler for portfolio items
-                alert('Portfolio item clicked! You can link this to a detailed project page.');
+                alert('Sorry! We\'re just making some changes to this page... come back later!.');
             });
         });
     </script>
