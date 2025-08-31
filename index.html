@@ -281,7 +281,8 @@
 
         .portfolio-item {
             position: relative;
-            aspect-ratio: 2/3;
+            aspect-ratio: 2/3; /* Film poster aspect ratio */
+            height: auto;
             border-radius: 15px;
             overflow: hidden;
             cursor: pointer;
@@ -303,6 +304,14 @@
 
         .portfolio-item:nth-child(3) {
             background-image: url('Last-Day-One-Sheet.jpg');
+        }
+
+        .portfolio-item:nth-child(4) {
+            background-image: url('Last-Day-One-Sheet.jpg'); /* Replace with Crawl Space poster when available */
+        }
+
+        .portfolio-item:nth-child(4) {
+            background-image: url('Last-Day-One-Sheet.jpg'); /* You'll want to replace this with a Crawl Space poster */
         }
 
         /* Dark overlay for better text readability */
@@ -540,8 +549,6 @@
                     </div>
                     <div class="portfolio-item fade-in">
                         <div class="portfolio-content">
-                            <h3>Last Day</h3>
-                            <div class="portfolio-content">
                             <h3>Last Day</h3>
                             <p>Upcoming coming-of-age, dramedy feature about what it means to truly live life to the fullest.</p>
                         </div>
