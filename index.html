@@ -680,6 +680,19 @@
                 alert('Portfolio item clicked! You can link this to a detailed project page.');
             });
         });
+
+        //project item click handlers
+        document.querySelectorAll('.portfolio-item').forEach((item, index) => {
+            item.addEventListener('click', function() {
+                const pages = [
+                    'the-dark-web.html',
+                    'anomaly-detected.html', 
+                    'last-day.html',
+                    'crawl-space.html'
+                ];
+                window.location.href = pages[index];
+            });
+        });
     </script>
 </body>
 </html>
