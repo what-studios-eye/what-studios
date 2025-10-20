@@ -306,6 +306,13 @@
             background-image: url('Last-Day-One-Sheet.jpg');
         }
 
+        .portfolio-item:nth-child(4) {
+            background-image: url('Last-Day-One-Sheet.jpg'); /* Replace with Crawl Space poster when available */
+        }
+
+        .portfolio-item:nth-child(4) {
+            background-image: url('Last-Day-One-Sheet.jpg'); /* You'll want to replace this with a Crawl Space poster */
+        }
 
         /* Dark overlay for better text readability */
         .portfolio-item::before {
@@ -546,6 +553,12 @@
                             <p>Upcoming coming-of-age, dramedy feature about what it means to truly live life to the fullest.</p>
                         </div>
                     </div>
+                    <div class="portfolio-item fade-in">
+                        <div class="portfolio-content">
+                            <h3>Crawl Space</h3>
+                            <p>An experimental horror short, exploring the use of tight spaces to evoke feelings of claustrophobia, whilst also exploring the fear of the unknown.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -553,7 +566,7 @@
         <section id="contact">
             <div class="container">
                 <h2 class="section-title fade-in">Get In Touch</h2>
-                <form class="contact-form fade-in">
+                <form class="contact-form fade-in" action="https://formspree.io/f/manpzqyj" method="POST">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -651,20 +664,10 @@
             }
         });
 
-        // Form submission
+        // Form submission - Remove the preventDefault to allow Formspree to work
         document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Here you would typically send the data to your server
-            // For now, we'll just show an alert
-            alert('Thanks for reaching out! We\'ll get back to you soon.');
-            
-            // Reset form
-            this.reset();
+            // Let the form submit naturally to Formspree
+            // Formspree will handle the redirect and confirmation
         });
 
         // Mobile menu toggle (basic implementation)
@@ -673,9 +676,7 @@
             navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
         });
 
-
-
-        //project item click handlers
+        // Portfolio item click handlers - link to individual project pages
         document.querySelectorAll('.portfolio-item').forEach((item, index) => {
             item.addEventListener('click', function() {
                 const pages = [
