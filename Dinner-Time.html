@@ -204,15 +204,19 @@
 
         .media-item {
             aspect-ratio: 16/9;
-            background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1rem;
-            color: #999;
-            border: 2px dashed rgba(255, 255, 255, 0.2);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
+
+.media-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
 
         .cast-crew {
             display: grid;
